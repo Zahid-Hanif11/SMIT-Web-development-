@@ -1,0 +1,20 @@
+<blockquote> for reference connection 
+<strong>
+<em>
+<q> for quotation
+<abbr> for abbreviation
+<cite>
+<dfn>
+Shift+alt+f
+lorem500
+alt+z for control overflow
+<address>
+<a> 
+<!-- -->
+<a href="Link" target="TargetedPage"> Show kia ho samne</a>
+id can be assign to any element 
+For Creating id <p id="ID name">
+For calling/Linking id: <a href="#id name">
+<del>for cutout
+"ins" for insert 
+<s> is for strikthrough
