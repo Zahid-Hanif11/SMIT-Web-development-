@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -42,6 +42,184 @@
             </td>
         </tr>
     </table>
+</body>
+
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Details Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+
+        .form-container {
+            width: 650px;
+            margin: 20px auto;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .dotted-line {
+            border: none;
+            border-top: 1px dotted #888;
+            margin: 10px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 8px 5px;
+            vertical-align: top;
+        }
+
+        .label-col {
+            text-align: right;
+            width: 130px;
+        }
+
+        .sub-text {
+            display: block;
+            font-size: 12px;
+            margin-top: 5px;
+        }
+
+        .qualifications-container {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .qualifications-container select {
+            width: 120px;
+        }
+
+        .qualifications-buttons {
+            display: flex;
+            gap: 5px;
+        }
+
+        .action-buttons {
+            margin-top: 10px;
+            margin-left: 140px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="form-container">
+        <h2>Job Details:</h2>
+        <hr class="dotted-line">
+
+        <form action="#" method="post">
+            <table>
+                <tr>
+                    <td class="label-col"><label for="job_title">Job Title:</label></td>
+                    <td><input type="text" id="job_title" name="job_title" size="30"></td>
+                </tr>
+                <tr>
+                    <td class="label-col"><label for="description">Description:</label></td>
+                    <td>
+                        <textarea id="description" name="description" rows="4" cols="32"></textarea>
+                        <span class="sub-text">Brief Description should have almost 500 characters</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label-col"><label for="company_name">Company Name:</label></td>
+                    <td><input type="text" id="company_name" name="company_name" size="30"></td>
+                </tr>
+                <tr>
+                    <td class="label-col"><label for="contact_number">Contact number:</label></td>
+                    <td><input type="text" id="contact_number" name="contact_number" size="30"></td>
+                </tr>
+                <tr>
+                    <td class="label-col"><label for="contact_person">Contact person:</label></td>
+                    <td><input type="text" id="contact_person" name="contact_person" size="30"></td>
+                </tr>
+                <tr>
+                    <td class="label-col"><label for="email">Email:</label></td>
+                    <td><input type="email" id="email" name="email" size="30"></td>
+                </tr>
+                <tr>
+                    <td class="label-col">Work Status</td>
+                    <td>
+                        <input type="checkbox" id="full_time" name="work_status" value="Full Time"> <label
+                            for="full_time">Full Time</label>
+                        <input type="checkbox" id="part_time" name="work_status" value="Part Time"> <label
+                            for="part_time">Part Time</label>
+                        <input type="checkbox" id="per_dim" name="work_status" value="Per Dim"> <label for="per_dim">Per
+                            Dim</label>
+                        <input type="checkbox" id="others" name="work_status" value="Others"> <label
+                            for="others">Others</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label-col"><label for="salary">Salary</label></td>
+                    <td>
+                        <input type="text" id="salary" name="salary" size="20">
+                        <select name="currency">
+                            <option value="USD">US Dollar</option>
+                            <option value="PKR">PKR</option>
+                            <option value="Euro">Euro</option>
+                        </select>
+                        <select name="period">
+                            <option value="Yearly">Yearly</option>
+                            <option value="Monthly">Monthly</option>
+                            <option value="Hourly">Hourly</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label-col"><label for="experience">Experience(Years)</label></td>
+                    <td><input type="text" id="experience" name="experience" size="30"></td>
+                </tr>
+                <tr>
+                    <td class="label-col"><label for="locations">Locations</label></td>
+                    <td><input type="text" id="locations" name="locations" size="30"></td>
+                </tr>
+                <tr>
+                    <td class="label-col"><label>Qualifications:</label></td>
+                    <td>
+                        <div class="qualifications-container">
+                            <select multiple size="4">
+                                <option value="any">Any</option>
+                                <option value="high_school">High School</option>
+                                <option value="associate">Associate</option>
+                                <option value="pre_bachelors">Pre Bachelors</option>
+                            </select>
+                            <div class="qualifications-buttons">
+                                <button type="button">ADD>></button>
+                                <button type="button">>>Remove</button>
+                            </div>
+                            <select multiple size="4" style="width: 60px;">
+                                <option value="any">Any</option>
+                            </select>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+            <hr class="dotted-line">
+
+            <div class="action-buttons">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+    </div>
+
 </body>
 
 </html>
