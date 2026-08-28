@@ -8,21 +8,37 @@
 </head>
 
 <body>
-    <table>
+    <table align="center" cellpadding="10" cellspacing="0">
+        <tr >
+            <th colspan="2"><b>Job Details:</b></th>
+        </tr>
         <tr>
             <td>
-                <form action="Task.html" method="post">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required><br><br>
-
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required><br><br>
-
-                    <label for="message">Message:</label><br>
-                    <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
-
-                    <input type="submit" value="Submit">
+                Job title:
+            </td>
+            <td>
+                <form>
+                    <input type="text" name="Job title" required>
                 </form>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Description:
+            </td>
+            <td>
+                <form>
+                    <textarea name="Description" rows="6" cols="30" required></textarea>
+                </form>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+                Brief Description Had almost 500 Characters.
             </td>
         </tr>
     </table>
