@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0264f6, #02d1a3);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.form-container {
+    background: #ffffff;
+    width: 100%;
+    max-width: 420px;
+    padding: 40px 50px;
+    border-radius: 4px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 20px;
+    color: #17bca3;
+    cursor: pointer;
+}
+
+h2 {
+    text-align: center;
+    color: #0093d5;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 35px;
+    letter-spacing: 1px;
+}
+
+.dot {
+    color: #0093d5;
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.input-group input {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #82e2dc;
+    padding: 8px 10px 8px 15px;
+    font-size: 13px;
+    color: #555;
+    outline: none;
+    background: transparent;
+}
+
+.input-group input::placeholder {
+    color: #777;
+    font-weight: 500;
+}
+
+.asterisk {
+    position: absolute;
+    left: 0;
+    top: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.no-asterisk {
+    padding-left: 0 !important;
+}
+
+.eye-icon {
+    position: absolute;
+    right: 0;
+    top: 8px;
+    cursor: pointer;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.checkbox-group input {
+    margin-top: 3px;
+    accent-color: #0093d5;
+}
+
+.checkbox-group label {
+    font-size: 9px;
+    color: #888;
+    line-height: 1.4;
+}
+
+.submit-btn {
+    width: 100%;
+    background: linear-gradient(to right, #0595d2, #0ad6ae);
+    color: white;
+    border: none;
+    padding: 14px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: opacity 0.3s;
+}
+
+.submit-btn:hover {
+    opacity: 0.9;
+}
+
+.signin-text {
+    text-align: center;
+    font-size: 11px;
+    color: #777;
+    margin-top: 20px;
+}
+
+.signin-text a {
+    color: #6398d1;
+    text-decoration: none;
+}
+
+.watermark {
+    margin-top: 25px;
+    color: white;
+    font-size: 14px;
+}
